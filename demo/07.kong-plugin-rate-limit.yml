@@ -1,0 +1,12 @@
+apiVersion: configuration.konghq.com/v1
+kind: KongPlugin
+metadata:
+  name: rate-limiting
+  namespace: petstore
+  annotations:
+    kubernetes.io/ingress.class: 'kong'
+config:
+  minute: 5
+  limit_by: ip
+  policy: local
+plugin: rate-limiting
