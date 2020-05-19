@@ -2,6 +2,7 @@ apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
   name: public-petstore
+  namespace: petstore
   annotations:
     kubernetes.io/ingress.class: 'kong'
 spec:

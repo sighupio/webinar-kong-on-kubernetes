@@ -7,6 +7,7 @@ metadata:
     app: petstore
   annotations:
     kubernetes.io/ingress.class: 'kong'
+    configuration.konghq.com: proxy
 spec:
   ports:
     - name: http
