@@ -4,7 +4,7 @@ bases:
   - ./vendor/katalog/monitoring/prometheus-operator
   - ./vendor/katalog/monitoring/prometheus-operated
   - ./vendor/katalog/monitoring/grafana
-  - ./vendor/katalog/kong/kong
+#  - ./vendor/katalog/kong/kong
 
 resources:
   - ./services.yml
