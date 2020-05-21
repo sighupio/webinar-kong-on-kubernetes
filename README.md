@@ -26,7 +26,7 @@ bases:
 
 ```bash
 furyctl vendor --https
-```{{execute}}
+```
 
 Procediamo quindi al prossimo step, installazione di prometheus e grafana
 
@@ -55,13 +55,13 @@ Procediamo all'installazione tramite:
 
 ```bash
 kustomize build . | kubectl apply -f -
-```{{execute}}
+```
 
 Attendiamo che prometheus e grafana siano in stato `Running`
 
 ```bash
 kubectl get pods -n monitoring
-```{{execute}}
+```
 
 Procediamo quindi all'installazione del Kong Ingress Controller
 
@@ -88,13 +88,13 @@ Procediamo all'installazione tramite:
 
 ```bash
 kustomize build . | kubectl apply -f -
-```{{execute}}
+```
 
 Attendiamo che il nostro kong ingress controller sia in stato running
 
 ```bash
 kubectl get pods -n kong
-```{{execute}}
+```
 
 Ora abbiamo il nostro Kong Ingress Controller pronto a servire traffico!
 
@@ -108,25 +108,25 @@ Posizioniamoci nella directory:
 
 ```bash
 cd demo
-```{{execute}}
+```
 
 Creiamo quindi il nostro namespace `petstore`:
 
 ```bash
 kubectl apply -f 01.namespace.yml
-```{{execute}}
+```
 
 Creiamo il nostro deployment, utilizzando l'immagine `swaggerapi/petstore:1.0.5`
 
 ```bash
 kubectl apply -f 02.deployment.yml
-```{{execute}}
+```
 
 Prima di esporre la nostra applicazione, vediamo come si presenta connettendoci direttamente al pod:
 
 ```bash
 kubectl -n petstore port-forward $(kubectl get pods -n petstore | tail -n 1 | cut -d ' ' -f 1) 9000:8080 --address 0.0.0.0
-```{{execute}}
+```
 
 Apriamo quindi la dashboard debug e posizioniamoci al path `/api/swagger.json`
 
@@ -138,13 +138,13 @@ Creiamo quindi un service collegato ai nostri pod del deployment:
 
 ```bash
 kubectl apply -f 03.service-1.yml
-```{{execute}}
+```
 
 E creiamo poi la nostra ingress:
 
 ```bash
 kubectl apply -f 04.public-ingress-1.yml
-```{{execute}}
+```
 
 La nostra ingress è definita in questo modo 
 
@@ -198,7 +198,7 @@ Applichiamola con:
 
 ```bash
 kubectl apply -f 05.kong-configuration-proxy.yml
-```{{execute}}
+```
 
 ... ma non funziona ancora.
 
@@ -216,7 +216,7 @@ In questa directory è già presente il manifest aggiornato, applichiamolo
 
 ```bash
 kubectl apply -f 06.service-2.yml
-```{{execute}}
+```
 
 Ora il nostro path `pet/1` funziona! 
 
@@ -247,7 +247,7 @@ Applichiamo il manifest con:
 
 ```bash
 kubectl apply -f 07.kong-plugin-rate-limit.yml
-```{{execute}}
+```
 
 Ovviamente dobbiamo anche legare questa CRD alla nostra Ingress, annotiamola quindi così:
 
@@ -263,7 +263,7 @@ E applichiamo il manifest:
  
 ```bash
 kubectl apply -f 08.public-ingress-2.yml
-```{{execute}}
+```
 
 Vediamo come ora la nostra ingress ha un altro comportamento aggiunto, il rate limiting!
 
@@ -291,7 +291,7 @@ plugin: prometheus
 
 ```bash
 kubectl apply -f 09.kong-plugin-prometheus.yml
-```{{execute}}
+```
 
 E come abbiamo già visto, applichiamolo alla Ingress:
 
@@ -305,7 +305,7 @@ E come abbiamo già visto, applichiamolo alla Ingress:
 
 ```bash
 kubectl apply -f 10.public-ingress-3.yml
-```{{execute}}
+```
 
 Vediamo che ora in grafana abbiamo correttamente i nostri dati popolati da prometheus.
 
