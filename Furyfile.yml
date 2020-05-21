@@ -4,6 +4,6 @@ bases:
   - name: monitoring/prometheus-operated
     version: "v1.6.1"
   - name: monitoring/grafana
-    version: "feature/grafana-kong-dashboard"
+    version: "v1.7.0"
   - name: kong/kong
     version: "v1.0.0"
