@@ -6,7 +6,7 @@ Posizioniamoci in
 
 ```bash
 cd /root/webinar-kong-on-kubernetes/
-```{{execute}} 
+```
 
 è già presente un file Furyfile.yml contenente 
 le versioni dei pacchetti di KFD (Kubernetes Fury Distribution) che andremo ad utilizzare:
