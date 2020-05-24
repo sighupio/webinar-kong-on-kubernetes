@@ -1,0 +1,20 @@
+apiVersion: configuration.konghq.com/v1
+kind: KongConsumer
+metadata:
+  name: user1
+  namespace: petstore
+  annotations:
+    kubernetes.io/ingress.class: 'kong'
+username: user
+credentials:
+  - user1
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: user1
+  namespace: petstore
+stringData:
+  kongCredType: basic-auth
+  password: "123456"
+  username: "user1"
