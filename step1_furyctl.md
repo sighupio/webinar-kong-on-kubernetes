@@ -5,7 +5,7 @@ Iniziamo scaricando le dipendenze tramite furyctl:
 Posizioniamoci in 
 
 ```bash
-cd /root/webinar-kong-on-kubernetes/
+cd webinar-kong-on-kubernetes/
 ``` 
 
 è già presente un file Furyfile.yml contenente 
