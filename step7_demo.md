@@ -28,4 +28,4 @@ Vediamo che ora in grafana abbiamo correttamente i nostri dati popolati da prome
 
 http://$(minikube ip):31081/pet/1
 
-
+**Kongratulations!**
