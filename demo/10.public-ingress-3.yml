@@ -5,7 +5,8 @@ metadata:
   namespace: petstore
   annotations:
     kubernetes.io/ingress.class: 'kong'
-    konghq.com/plugins: rate-limiting,prometheus
+    konghq.com/plugins: rate-limiting
+    konghq.com/override: methods-customization
 spec:
   rules:
     - http:
