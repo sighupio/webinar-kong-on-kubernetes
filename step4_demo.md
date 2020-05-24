@@ -28,7 +28,7 @@ kubectl -n petstore port-forward $(kubectl get pods -n petstore | tail -n 1 | cu
 
 Apriamo quindi la dashboard debug e posizioniamoci al path `/api/swagger.json`
 
-* [Step 5 - Esponiamo Petstore tramite Ingress](step5_demo.md)
+
 
 https://localhost:9000/api/swagger.json
 
@@ -39,3 +39,5 @@ kubectl apply -f 03.service-1.yml
 ```
 
 La nostra applicazione è ora pronta per essere collegata dall'esterno tramite `Ingress`
+
+[Step 5 - Esponiamo Petstore tramite Ingress](step5_demo.md)
