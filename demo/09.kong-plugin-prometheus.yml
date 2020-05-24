@@ -3,6 +3,8 @@ kind: KongPlugin
 metadata:
   name: prometheus
   namespace: petstore
+  labels:
+    global: "true"
   annotations:
     kubernetes.io/ingress.class: 'kong'
 plugin: prometheus
