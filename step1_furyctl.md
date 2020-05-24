@@ -30,3 +30,4 @@ furyctl vendor --https
 
 Procediamo quindi al prossimo step, installazione di prometheus e grafana
 
+[Step 2 - Installiamo Prometheus e Grafana con KFD](step2_kustomize.md)

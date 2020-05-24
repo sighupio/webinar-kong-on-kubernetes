@@ -35,3 +35,5 @@ http://$(minikube ip):31081/pet/1
 Riceviamo un errore 404, dato che il path a cui stiamo accedendo è `/pet/1` mentre nel pod sarà `/api/pet/1`.
 
 Procediamo al prossimo step dove configureremo le estensioni di Kong tramite CRD (Custom Resource Definition)
+
+* [Step 6 - Estendiamo il funzionamento con le CRD di Kong](step6_demo.md)

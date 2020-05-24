@@ -34,3 +34,5 @@ kubectl get pods -n monitoring
 ```
 
 Procediamo quindi all'installazione del Kong Ingress Controller
+
+[Step 3 - Installiamo Kong Ingress Controller con KFD](step3_kong.md)

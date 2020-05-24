@@ -38,3 +38,5 @@ kubectl get pods -n kong
 Ora abbiamo il nostro Kong Ingress Controller pronto a servire traffico!
 
 Procediamo quindi al prossimo step dove installeremo alcuni Ingress e configureremo un applicazione di prova
+
+[Step 4 - Installiamo l'app Petstore](step4_demo.md)

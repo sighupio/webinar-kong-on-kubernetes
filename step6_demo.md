@@ -278,3 +278,5 @@ E anche queste credenziali sono accettate!
 
 Ovviamente la basic auth è la modalità più semplice per effettuare un autenticazione HTTP, possiamo anche configurare altri plugin
 che utilizzano altre metodologie.
+
+* [Step 7 - Raccogliamo le metriche con Prometheus](step7_demo.md)
