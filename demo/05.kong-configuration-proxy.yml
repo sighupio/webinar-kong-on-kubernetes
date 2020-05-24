@@ -7,5 +7,3 @@ metadata:
     kubernetes.io/ingress.class: 'kong'
 proxy:
   path: /api/
-route:
-  strip_path: false
