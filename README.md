@@ -6,6 +6,8 @@ Prerequisiti:
 - Kustomize v3
 - Furyctl https://github.com/sighupio/furyctl
 
+Alternativamente potete avviare la demo su Katacoda a questo link: https://www.katacoda.com/sighupio/scenarios/kong-on-kubernetes
+
 ## Steps
 
 * [Step 1 - Furyctl](step1_furyctl.md)
