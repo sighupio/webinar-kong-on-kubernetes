@@ -208,7 +208,7 @@ Dobbiamo dire a Kong qual'è il servizio su cui fare questo proxy rewrite aggiun
 ...
   annotations:
     kubernetes.io/ingress.class: 'kong'
-    configuration.konghq.com: proxy
+    konghq.com/override: proxy
 ...
 ```
 
