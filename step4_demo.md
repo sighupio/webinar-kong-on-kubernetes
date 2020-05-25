@@ -30,7 +30,7 @@ Apriamo quindi la dashboard debug e posizioniamoci al path `/api/swagger.json`
 
 
 
-https://localhost:9000/api/swagger.json
+http://localhost:9000/api/swagger.json
 
 Creiamo quindi un service collegato ai nostri pod del deployment:
 
