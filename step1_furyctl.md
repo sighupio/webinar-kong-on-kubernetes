@@ -25,7 +25,7 @@ bases:
 ```
 
 ```bash
-furyctl vendor --https
+furyctl distribution download --https
 ```
 
 Procediamo quindi al prossimo step, installazione di prometheus e grafana
